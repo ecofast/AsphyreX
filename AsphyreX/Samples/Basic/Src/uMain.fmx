@@ -1,0 +1,28 @@
+object frmMain: TfrmMain
+  Left = 637
+  Top = 277
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'AsphyreX Basic'
+  ClientHeight = 720
+  ClientWidth = 1280
+  Position = ScreenCenter
+  Quality = HighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  OnPaint = FormPaint
+  OnShow = FormShow
+  Left = 637
+  Top = 277
+  DesignerMasterStyle = 0
+  object tmrSystem: TTimer
+    Interval = 16
+    OnTimer = tmrSystemTimer
+    Left = 88
+    Top = 136
+  end
+end
